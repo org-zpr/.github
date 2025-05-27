@@ -32,10 +32,11 @@ ZPR is both a policy system and a runtime network overlay. The key components:
 
 - **ZPL (Policy Language):** A declarative language for specifying roles, permissions, and conditions based on identity and context. Human-readable, type-safe, and expressive.
 - **ZPRnet:** A mesh of cooperating nodes that enforce ZPL policies at the network level. Policy decisions are traceable and enforceable at every hop.
-- **Visas:** Cryptographic tokens attached to packets, binding them to authenticated identities and explicitly granted permissions. These replace traditional IP headers.
-- **Trusted Services:** External identity sources (e.g., LDAP, cloud metadata services) feed real-time attributes into policy evaluation.
+- **Visas:** Authenticated snippets of policy which bind packets to authenticated identities, explicitly granted permissions, and forwarding instructions. Each packet is cryptographically associated with the visa under which it is being forwarded by a label which replaces the traditional IP header.
+- **Trusted Services:** Real-time attributes are fed into policy evalution by external identity sources (e.g., LDAP, cloud metadata services).
 - **Visa Service:** Evaluates policy against live context to issue or revoke visas. Central to ZPR’s real-time enforcement model.
 - **Adapters & Docks:** Bridges between the ZPR overlay and conventional IP systems. These handle encapsulation and translation at ingress/egress points.
+- **Nodes:** Forwarders within the ZPRnet. Nodes enforce policy issued by the Visa Service.
 
 ZPR is designed for environments where clarity and control are non-negotiable. All policy and enforcement decisions are distributed, verifiable, and transparent.
 
