@@ -42,6 +42,6 @@ ZPR is designed for environments where clarity and control are non-negotiable. A
 
 ## Featured Projects
 - [zpr-core](https://github.com/org-zpr/zpr-core): Core routing engine
-- [zpl](https://github.com/org-zpr/zpl): Zero-trust Policy Language compiler
+- [zpl](https://github.com/org-zpr/zpr-compiler): Zero-trust Policy Language compiler
 
 [Get in touch](info@zpr.org) and read more at [zpr.org](https://zpr.org)
